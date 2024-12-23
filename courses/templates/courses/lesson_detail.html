@@ -1,0 +1,7 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+<h2>{{ lesson.title }}</h2>
+<p>{{ lesson.content }}</p>
+<a href="{% url 'course_detail' lesson.course.id %}">Orqaga</a>
+{% endblock %}
